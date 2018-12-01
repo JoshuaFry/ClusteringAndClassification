@@ -41,6 +41,7 @@ if __name__ == "__main__":
 
     #save a parallel list of x,y, and centroids to determine new centroid postitions
     xycentroid_list = [find_nearest_centroid(x_coord[i], y_coord[i], centroids_x,centroids_y) for i in range(len(x_coord))]
+
     x_list = [xycentroid_list[i][0] for i in range(len(xycentroid_list))]
     y_list = [xycentroid_list[i][1] for i in range(len(xycentroid_list))]
     centroids_list = [xycentroid_list[i][2] for i in range(len(xycentroid_list))]
